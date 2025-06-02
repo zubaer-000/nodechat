@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NodeChat — Real-time Conversations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,7 +13,7 @@
         }
 
         body {
-            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
             background-color: #fff;
             color: #333;
             line-height: 1.6;
@@ -40,10 +41,11 @@
         }
 
         .logo {
+            font-family: 'Permanent Marker', cursive;
             display: flex;
             align-items: center;
-            font-size: 1.5rem;
-            font-weight: 600;
+            font-size: 1.8rem;
+            font-weight: 400;
             color: #333;
             text-decoration: none;
         }
@@ -51,7 +53,7 @@
         .logo::before {
             content: '⬢';
             color: #339933;
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin-right: 0.5rem;
         }
 
@@ -62,10 +64,12 @@
         }
 
         .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 3.5rem;
+            font-weight: 400;
             margin-bottom: 1rem;
             color: #333;
+            line-height: 1.2;
         }
 
         .hero p {
@@ -87,11 +91,12 @@
         }
 
         .chat-header {
+            font-family: 'Permanent Marker', cursive;
             background: #339933;
             color: white;
             padding: 1rem 1.5rem;
-            font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
+            letter-spacing: 0.5px;
         }
 
         .chat-messages {
@@ -129,8 +134,10 @@
         }
 
         .message-author {
-            font-weight: 600;
+            font-family: 'Permanent Marker', cursive;
+            font-weight: 400;
             color: #339933;
+            letter-spacing: 0.3px;
         }
 
         .message-time {
@@ -161,6 +168,7 @@
             border-radius: 4px;
             font-size: 0.9rem;
             transition: border-color 0.2s;
+            font-family: 'Open Sans', sans-serif;
         }
 
         .username-input:focus {
@@ -175,6 +183,7 @@
             border-radius: 4px;
             font-size: 1rem;
             transition: border-color 0.2s;
+            font-family: 'Open Sans', sans-serif;
         }
 
         .message-input:focus {
@@ -183,13 +192,15 @@
         }
 
         .send-button {
+            font-family: 'Permanent Marker', cursive;
+            font-weight: 400;
             padding: 0.75rem 1.5rem;
             background: #339933;
             color: white;
             border: none;
             border-radius: 4px;
-            font-size: 1rem;
-            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
             cursor: pointer;
             transition: background-color 0.2s;
         }
@@ -237,7 +248,7 @@
             }
             
             .hero h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
             
             .chat-input-form {
@@ -247,10 +258,15 @@
             .username-input {
                 flex: none;
             }
+
+            .logo {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Rest of your HTML remains exactly the same -->
     <header class="header">
         <div class="container">
             <nav class="nav">
@@ -314,7 +330,9 @@
         </div>
     </footer>
 
+    <!-- JavaScript remains exactly the same -->
     <script>
+        // [Previous JavaScript code remains unchanged]
         // Parse username from URL parameters
         const urlParams = new URLSearchParams(window.location.search);
         const urlUsername = urlParams.get('user') || null;
